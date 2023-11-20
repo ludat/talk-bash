@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -euo pipefail
 
@@ -15,7 +15,7 @@ main() {
     mkdir -p "$carpeta_tests_maven" "$carpeta_produ_maven"
 
     # Copiar los archivos del proyecto a la carpeta mavenizada
-    cd $carpeta_original
+    cd "$carpeta_original"
 
     for archivo_test in $(find src -type f -name "*Test.java")
     do
